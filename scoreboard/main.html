@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>ScoreBoard 2.0</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-5">湘北籃球隊計分板 2.0</h1>
+      <button type="button" class="btn btn-danger mb-2" id="reset-btn">
+        Reset
+      </button>
+      <table
+        class="scoreboard table table-striped table-bordered table-hover text-center"
+      >
+        <thead>
+          <tr>
+            <th>球員</th>
+            <th>得分</th>
+            <th>籃板</th>
+            <th>助攻</th>
+            <th>抄截</th>
+            <th>阻攻</th>
+          </tr>
+        </thead>
+        <tbody id="data-panel">
+          <!-- display data here -->
+        </tbody>
+      </table>
+      <div class="container">
+        <div class="row">
+          <input
+            type="text"
+            placeholder="Add new player"
+            id="input-player"
+            class="form--custom form-control mb-2"
+          />
+          <button id="add-btn" class="btn btn-info">Add</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
