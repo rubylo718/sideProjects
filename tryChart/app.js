@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xAxis: {
       title: {
         enabled: true,
-        text: "Strain (%)",
+        text: "x-axis",
       },
       startOnTick: true,
       endOnTick: true,
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     yAxis: {
       title: {
-        text: "Stress (MPa)",
+        text: "y-axis",
       },
     },
     legend: {
